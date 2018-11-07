@@ -19,6 +19,8 @@ $(function() {
       dataType: 'json'
 
     })
+      $('#user-search-result').on('click', '.user-search-add', function(){
+    console.log(this);
     });
   });
 });
