@@ -206,6 +206,7 @@ GEM
 PLATFORMS
   ruby
 
+
 DEPENDENCIES
   byebug
   carrierwave

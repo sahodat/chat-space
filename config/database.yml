@@ -47,6 +47,7 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+# adad
 production:
   <<: *default
   database: chat-space_production
