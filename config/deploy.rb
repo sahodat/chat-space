@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '<Capistranoのバージョン>'
+lock '3.11.0'
 
 set :application, 'chat-space'
 set :repo_url,  'git@github.com:sahodat/chat-space.git'
@@ -12,6 +12,8 @@ set :rbenv_ruby, '2.3.1'
 set :ssh_options, auth_methods: ['publickey'],
                   keys: ['~/.ssh/sahodat6.pem']
                    # ※例：~/.ssh/key_pem.pem
+
+set :deploy_to, "/var/wwww/chat-space"
 
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
 set :unicorn_config_path, -> { "#{current_path}/config/unicorn.rb" }
